@@ -60,6 +60,8 @@ project-root/
 │   │   └── locationRoutes.js        # Location routes
 │   ├── models/                      # Database models
 │   ├── middleware/                  # Custom middleware
+        ├── auth.js                  # Auth
+│   │   ├── role.js                  # Role
 │   ├── controllers/                 # Route controllers
 │   ├── seeder/                      # ImportCountriesSeeder
 │   ├── .env                         # Environment variables
@@ -147,6 +149,10 @@ npm start
 ```
 
 Frontend will run on `http://localhost:3000`
+
+## Middleware
+- `auth` - Authenticate User
+- `role` - Authorize User Role
 
 ## API Endpoints
 
