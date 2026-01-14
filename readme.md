@@ -251,20 +251,39 @@ Frontend will run on `http://localhost:3000`
   email: String (unique),
   password: String (hashed),
   role: String (enum: ['user', 'admin']),
+  city: String,
   createdAt: Date,
   updatedAt: Date
 }
 ```
 
-### Location Model
+### Location Models
+## countries
 ```javascript
+
 {
   name: String,
-  address: String,
-  coordinates: {
-    latitude: Number,
-    longitude: Number
-  },
+  code: String,
+  createdAt: Date,
+  updatedAt: Date
+}
+```
+## states
+```javascript
+
+{
+  name: String,
+  country: String,
+  createdAt: Date,
+  updatedAt: Date
+}
+```
+## cities
+```javascript
+
+{
+  name: String,
+  state: String,
   createdAt: Date,
   updatedAt: Date
 }
